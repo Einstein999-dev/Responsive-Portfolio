@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&family=Nabla&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Background colors */
+    --dark: #252525;
+    --light: #ADD8E6;
+    --blue:#234E70;
+
+    /* text colors */
+
+    /* font family  */
+    --primary-font:'Jost', sans-serif;
+    --secondary-font:'Ubuntu', sans-serif;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url(/img/body-bg.png.webp);
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 80px 0;
+}
+
+footer{
+    padding: 20px 0;
+}
+
+.main-btn{
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgb(118, 85, 225 / 30%);
+    border:double 2px transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: 0.3s all ease-in-out;
+}
+
+.primary-btn{
+    background: var(--blue);
+    color: white;
+}
+.primary-btn:hover{
+    border-color: var(--blue);
+    background-color: black;
+    color: var(--light);
+    box-shadow: none;
+}
+.secondary-btn{
+    background: white;
+    color: var(--blue);
+    border-color: black;
+}
+.secondary-btn:hover{
+    border-color: var(--blue);
+    background-color: black;
+    color: var(--light);
+    box-shadow: none;
+}
+h1{
+    font-size: 75px;
+    line-height: 60px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+h2{
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+}
+h3{
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+h5{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 35px;
+}
+p{
+    color: grey;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+navbar styling
+---------------------------------------------------------------*/
+.header_wrapper .navbar{
+    background: var(--blue);
+    box-shadow: 0 0 10px 5px #234f7052;
+}
+.header_wrapper .navbar-brand{
+    font-family: 'Nabla', cursive;
+    transition: all 0.3s ease;
+}
+.header_wrapper .navbar-brand:hover{
+    color: white;
+    transform: scale(1.1);
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item .nav-link{
+    color: var(--light);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.header_wrapper .nav-item .active,
+.header_wrapper .nav-item .nav-link:hover{
+    color: white;
+    transition: all 0.3s ease;
+}
+.header_wrapper .navbar-toggler{
+    color: transparent;
+    align-items: center;
+    border: none;
+}
+.header_wrapper .navbar-toggler:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    color: transparent;
+}
+/* navbar ends  */
+
+/*--------------------------------------------------------------
+home styling
+---------------------------------------------------------------*/
+.home_wrapper{
+    padding-top: 250px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--light);
+}
+
+/* home ends  */
+
+/*--------------------------------------------------------------
+about styling
+---------------------------------------------------------------*/
+.about_wrapper{
+    padding-top: 150px;
+    /* background: var(--blue); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+/* about ends  */
+
+/*--------------------------------------------------------------
+skills styling
+---------------------------------------------------------------*/
+.skill_wrapper{
+    padding-top: 100px;
+    background: var(--light);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.skill_wrapper .card{
+    cursor: pointer;
+    transition: all 0.4s ease; 
+    border: none;
+    background-color: transparent;
+}
+.skill_wrapper .card .progress{
+    padding-left: 0px;
+    height: 20px;
+}
+.skill_wrapper .card .progress-bar-striped{
+    background-color: var(--blue);
+}
+/* skill ends  */
+
+/*--------------------------------------------------------------
+project styling
+---------------------------------------------------------------*/
+.project_wrapper{
+    /* background: var(--green); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.project_wrapper .carousel{
+    /* border: 2px black solid; */
+    border-radius: 30px;
+}
+.project_wrapper .carousel-inner{
+    border-radius: 28px;
+}
+.project_wrapper .carousel button{
+    color: black;
+}
+.carousel-control-prev-icon {
+    background-image:url(/img/left\ .png);
+    height: 60px;
+    width: 60px;
+}
+.carousel-control-next-icon {
+    background-image:url(/img/right.png);
+    height: 60px;
+    width: 60px;
+}
+/* project ends  */
+
+/*--------------------------------------------------------------
+contact styling
+---------------------------------------------------------------*/
+.contact_wrapper{
+    background: var(--light);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.contact_wrapper iframe{
+    height: 350px;
+    width: 650px;
+}
+.contact_wrapper iframe:hover{
+    box-shadow: 0 0 20px 10px rgba(166, 166, 166, 0.548);
+    transition: 0.4s ease all;
+}
+.contact_wrapper input:focus,
+.contact_wrapper textarea:focus{
+    box-shadow: none;
+}
+/* contact ends */
+
+/*--------------------------------------------------------------
+footer styling
+---------------------------------------------------------------*/
+.footer_wrapper{
+    background: var(--blue);
+}
+.footer_wrapper .social{
+    padding-top: 10px;
+}
+.footer_wrapper .social a{
+    padding: 10px;
+}
+.footer_wrapper .social img{
+    transition: all 0.4s ease-in-out;
+}
+.footer_wrapper .social .link{
+    fill: blue;
+}
+.footer_wrapper .social img:hover{
+    transform: scale(1.1);
+    transition: all 0.4 ease-in-out ;
+}
+.footer_wrapper .row span{
+    color: var(--light);
+}
+/* footer ends  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

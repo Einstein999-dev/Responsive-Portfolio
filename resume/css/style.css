@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&family=Karla:ital,wght@1,500&family=Ubuntu:wght@500&display=swap');
+
+
+body{
+    font-family:'Ubuntu', sans-serif;
+}
+h3{
+    color: rgb(24, 36, 36);
+    /* border: 1px dashed black; */
+}
+hr{
+    height: 2px;
+    background-color: black;
+}
+i{
+    padding-top: 10px;
+    float: left;
+}
+li{
+    color: black;
+    padding: 5px;
+    margin-left: -20px;
+    font-size: 15px;
+}
+
+
+.container{
+    height: 1300px;
+    width: 800px;
+    border: 10px double rgb(94, 114, 122);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    margin: auto;
+}
+
+.container .header{
+    height: 150px;
+    width: 780px;
+    border: 10px  white;
+    border-radius: 10px;
+    background-image: url('/resume/img/header.jpg');
+    padding: 10px;
+}
+.container .header .name{
+    padding-left: 350px;
+    font-size: 50px;
+    margin-top: 16px;
+    text-shadow: 2px 4px 2px rgba(55, 55, 55, 0.247);
+    color:rgba(28, 28, 46);
+}
+.container .header .profession{
+    padding-left: 350px;
+    font-size: 30px;
+    margin-top: -15px;
+    text-shadow: 2px 3px 2px rgba(55, 55, 55, 0.247);
+    color: rgb(66, 17, 17);
+}
+
+.container .imgcircledash{
+    height: 180px;
+    width: 180px;
+    border: 10px double white;
+    border-radius: 50%;
+    margin: 30px;
+    margin-top: -110px;
+}
+.container .imgcircledash .imagecircle{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    margin: 8px;
+}
+.container .imgcircledash .imagecircle img{
+    border-radius: 50%;
+}
+
+.container .leftbox{
+    height: 1127px;
+    width: 350px;
+    /* border: 1px solid black; */
+    background-color: hsla(172, 45%, 65%, 0.575);
+    border-radius: 10px;
+    margin-top: 5px;
+    float: left;
+}
+
+.leftbox .mycontact{
+    font-size: 15px;
+    margin: 5px;
+    margin-top: 30px;
+    padding: 50px;
+    margin-bottom: -100px;
+}
+.leftbox .mycontact .email{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.leftbox .mycontact .phone{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.leftbox .mycontact .add{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.leftbox .skills{
+    font-size: 15px;
+    margin: 5px;
+    padding: 50px;
+    margin-bottom: -120px;
+}
+
+.leftbox .strength{
+    font-size: 15px;
+    margin: 5px;
+    padding: 50px;
+}
+
+
+.container .rightbox{
+    height: 1127px;
+    width: 446px;
+    /* border: 1px solid black; */
+    background-color: hsla(346, 79%, 87%, 0.4);
+    border-radius: 10px;
+    margin-top: 5px;
+    float: right;
+}
+
+.rightbox .about{
+    font-size: 15px;
+    margin: 5px;
+    padding: 40px;
+    margin-top: -10px;
+}
+
+.rightbox .education{
+    margin: 50px;
+    margin-top: -45px;
+}
+
+.rightbox .work{
+    margin: 50px;
+    margin-top: -35px;
+}
+
+.rightbox .language{
+    margin: 50px;
+    margin-top: -35px;
+}
+
+.rightbox .hobby{
+    margin: 50px;
+    margin-top: -35px;
+}

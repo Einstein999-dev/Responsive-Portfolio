@@ -1,0 +1,76 @@
+/*-------------------------------------------------------------------------------------
+responsive meadia query
+---------------------------------------------------------------------------------------*/
+
+@media (max-width:1199px){
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+        line-height: 45px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    .carousel-control-prev-icon {
+        height: 30px;
+        width: 30px;
+    }
+    .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width:991px){
+    .header_wrapper .navbar-collapse{
+        margin-top: 2px;
+    }
+    .header_wrapper .menu-navbar-nav{
+        text-align: center;
+        background-color: var(--blue);
+        padding-bottom: 15px;
+    }
+    .header_wrapper .nav-item .nav-link{
+        margin-top: 15px;
+        color: var(--light);
+        transition: all 0.3s ease-in-out;
+    }
+    .header_wrapper .nav-item .nav-link:hover{
+        color: white;
+    }
+    .carousel-control-prev-icon {
+        height: 40px;
+        width: 40px;
+    }
+    .carousel-control-next-icon {
+        height: 40px;
+        width: 40px;
+    }
+}
+@media (max-width:767px){
+    h1{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .carousel-control-prev-icon {
+        height: 30px;
+        width: 30px;
+    }
+    .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+    }
+}
